@@ -9,3 +9,13 @@ It will use an existing [yahtzee scorecard repo](https://github.com/alexthehasza
 When contributing to the project, you can assign an existing issue to yourself, or create a pull request directly. Contributions are welcomed. I will try to actively watch this repo for contributions and help out wherever I can.
 
 To get your Lynx dev environment and live preview setup, [this](https://lynxjs.org/react/start/quick-start.html#explorer-platform=ios-simulator,ios-simulator-platform=macos-intel) may be helpful
+
+## Building to ios
+
+To build an the app for ios in xcode (not live preview using Lynx), you must first build the lynx project by running
+
+    yarn build
+
+in the root directory.
+
+Then you can open `ios/YahtzeeScorecard/YahtzeeScorecard.xcworkspace` in xcode, and build the project there.
