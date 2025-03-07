@@ -6,13 +6,16 @@ const binaryLabels = [
   { label: 'Full House', value: 25 },
   { label: 'Short Straight', value: 30 },
   { label: 'Long Straight', value: 40 },
+  { label: 'Yahtzee', value: 50 },
 ];
 
 export function LowerHalf(props: {
   total: number;
   setTotal: (value: number) => void;
 }) {
-  const [binaryValues, setBinaryValues] = useState([false, false, false]);
+  const [binaryValues, setBinaryValues] = useState([
+    ...binaryLabels.map(() => false),
+  ]);
 
   useEffect(() => {
     const totalBinaries = binaryValues.reduce(
