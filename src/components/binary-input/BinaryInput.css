@@ -1,0 +1,18 @@
+.binary-input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: var(--size-columnhalf);
+}
+
+.binary-button {
+  width: var(--size-input);
+  border: 2px solid var(--color-foreground);
+  border-radius: 5px;
+  height: 80%;
+  justify-content: center;
+
+  > text {
+    text-align: center;
+  }
+}

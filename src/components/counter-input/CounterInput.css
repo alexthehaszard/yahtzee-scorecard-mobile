@@ -1,0 +1,36 @@
+.counter-input {
+  display: flex;
+  justify-content: flex-end;
+  width: var(--size-columnhalf);
+}
+
+.counter-button-group {
+  display: flex;
+  width: var(--size-input);
+  justify-content: space-between;
+}
+
+.counter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-foreground);
+  border-radius: 5px;
+
+  height: 80%;
+  aspect-ratio: 1 / 1;
+
+  > text {
+    color: var(--color-background);
+  }
+}
+
+.counter-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-foreground);
+  border-radius: 5px;
+  height: 80%;
+  aspect-ratio: 1 / 1;
+}

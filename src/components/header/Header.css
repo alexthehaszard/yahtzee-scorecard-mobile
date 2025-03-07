@@ -1,0 +1,8 @@
+.header {
+  width: 100%;
+  text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
