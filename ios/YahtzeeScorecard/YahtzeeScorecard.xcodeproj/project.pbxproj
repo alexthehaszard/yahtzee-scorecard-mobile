@@ -15,6 +15,7 @@
 		2B94A3D52D6613740060892C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2B94A3D42D6613740060892C /* Base */; };
 		2B94A3DD2D6614980060892C /* DemoLynxProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A3DC2D6614980060892C /* DemoLynxProvider.swift */; };
 		5E957359074082362CBD2B95 /* libPods-YahtzeeScorecard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2679482DAB8ECB7865B2F568 /* libPods-YahtzeeScorecard.a */; };
+		E879AFB32D7BF43400D8A89A /* Input.m in Sources */ = {isa = PBXBuildFile; fileRef = E879AFB22D7BF43400D8A89A /* Input.m */; };
 		E88C06B52D7AA2760089EAEF /* main.lynx.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E88C06B42D7AA2760089EAEF /* main.lynx.bundle */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		2B94A3DE2D6614DC0060892C /* YahtzeeScorecard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YahtzeeScorecard-Bridging-Header.h"; sourceTree = "<group>"; };
 		5DEB2CB20447981C045EE063 /* Pods-YahtzeeScorecard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahtzeeScorecard.release.xcconfig"; path = "Target Support Files/Pods-YahtzeeScorecard/Pods-YahtzeeScorecard.release.xcconfig"; sourceTree = "<group>"; };
 		8DF51B07055D199FF170A460 /* Pods-YahtzeeScorecard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahtzeeScorecard.debug.xcconfig"; path = "Target Support Files/Pods-YahtzeeScorecard/Pods-YahtzeeScorecard.debug.xcconfig"; sourceTree = "<group>"; };
+		E879AFB12D7BF43400D8A89A /* Input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		E879AFB22D7BF43400D8A89A /* Input.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Input.m; sourceTree = "<group>"; };
 		E88C06B42D7AA2760089EAEF /* main.lynx.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; name = main.lynx.bundle; path = bundle/main.lynx.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +75,8 @@
 				2B94A3C82D6613730060892C /* AppDelegate.swift */,
 				2B94A3CA2D6613730060892C /* SceneDelegate.swift */,
 				2B94A3CC2D6613730060892C /* ViewController.swift */,
+				E879AFB12D7BF43400D8A89A /* Input.h */,
+				E879AFB22D7BF43400D8A89A /* Input.m */,
 				2B94A3CE2D6613730060892C /* Main.storyboard */,
 				2B94A3D12D6613740060892C /* Assets.xcassets */,
 				2B94A3D32D6613740060892C /* LaunchScreen.storyboard */,
@@ -215,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E879AFB32D7BF43400D8A89A /* Input.m in Sources */,
 				2B94A3DD2D6614980060892C /* DemoLynxProvider.swift in Sources */,
 				2B94A3CD2D6613730060892C /* ViewController.swift in Sources */,
 				2B94A3C92D6613730060892C /* AppDelegate.swift in Sources */,

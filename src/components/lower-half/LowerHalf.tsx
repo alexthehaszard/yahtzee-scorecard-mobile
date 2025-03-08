@@ -1,6 +1,7 @@
 import { useEffect, useState } from '@lynx-js/react';
 import './LowerHalf.css';
 import { BinaryInput } from '../binary-input/BinaryInput.tsx';
+import { ManualInput } from '../manual-input/ManualInput.tsx';
 
 const binaryLabels = [
   { label: 'Full House', value: 25 },
@@ -33,6 +34,10 @@ export function LowerHalf(props: {
 
   return (
     <view className="lower-half">
+      <view className="row">
+        <text>3 Of a Kind</text>
+        <ManualInput />
+      </view>{' '}
       {binaryLabels.map((binary, index) => {
         return (
           <view className="row">
