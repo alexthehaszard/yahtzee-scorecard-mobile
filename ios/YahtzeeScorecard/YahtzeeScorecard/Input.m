@@ -1,6 +1,5 @@
 // Copyright 2024 The Lynx Authors. All rights reserved.
-// Licensed under the Apache License Version 2.0 that can be found in the
-// LICENSE file in the root directory of this source tree.
+// Licensed under the Apache License Version 2.0
 
 #import "Input.h"
 #import <Lynx/LynxComponentRegistry.h>
@@ -38,6 +37,7 @@ LYNX_LAZY_REGISTER_UI("input")
 
 - (UITextField *)createView {
   UITextField *textField = [[LynxTextField alloc] init];
+  textField.keyboardType = UIKeyboardTypeNumberPad;
   textField.autoresizesSubviews = NO;
   textField.clipsToBounds = YES;
   textField.delegate = self;
@@ -64,6 +64,8 @@ LYNX_PROP_SETTER("placeholder", setPlaceholder, NSString *) { self.view.placehol
            detail:@{
              @"value" : [self.view text] ?: @"",
            }];
+    self.view.text = [@(MAX([self.view.text intValue], 0)) stringValue];
+    self.view.text = [@(MIN([self.view.text intValue], 30)) stringValue];
 }
 
 LYNX_UI_METHOD(focus) {
